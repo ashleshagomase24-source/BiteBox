@@ -1,0 +1,61 @@
+container {
+    height: 350px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40 px;
+    justify-content: center;
+    align-content: center;
+}
+
+.container {
+    height: 200px;
+    width: 150px;
+    border: 1px solid black;
+    gap: 2px;
+    justify-content: center;
+}
+
+.container1 {
+    height: 200px;
+    width: 150px;
+    border: 1px solid black;
+    gap: 2px;
+
+}
+
+.container2 {
+    height: 200px;
+    width: 150px;
+    border: 1px solid black;
+    gap: 2px;
+    justify;
+    -content: center;
+}
+
+.container3 {
+    height: 200px;
+    width: 150px;
+    border: 1px solid black;
+    gap: 2px;
+    justify-content: center;
+}
+
+*/ .felx_container {
+    display: flex;
+    flex-direction: row row-reverse;*/
+    flex-wrap: wrap-reverse;*/
+    justify-content: space-between;
+    gap: 2px;
+
+
+}
+
+.box {
+
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+
+
+}
