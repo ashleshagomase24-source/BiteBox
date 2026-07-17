@@ -5,10 +5,10 @@
     font-family: sans-serif;
 }
 
- nav {
-    padding: 20px;
+ nav{
+    padding: 0 10px 0 20px;
     background-color: black;
-    height: 100px;
+    height: 70px;
 } 
 
  nav div{
@@ -17,12 +17,12 @@
     align-items: center;
 } 
  
-nav div ul{
+ul{
     display: flex;
     list-style: none;
   }
   
-nav li a{
+li a{
     color: white;
     padding: 20px;
     text-decoration: none;
@@ -32,16 +32,16 @@ nav a:hover {
     color: red;
 }
 
-nav li:last-child a {
+nav li:last-child a{
     background-color: red;
     padding: 6px 12px;
     border-radius: 5px;
+    color:white;
 }
 
-nav li:last child a:hover {
+nav li:last-child a:hover{
     background-color: #cc0000;
-    color: black;
-
+    color:black;
 }
 
 nav a.active {
@@ -50,7 +50,7 @@ nav a.active {
     border-bottom: 2px;
 }
 
-.hero {
+.hero{
     height: 90vh;
     background-image: url("../image/Banner food.jpg");
     display: flex;
@@ -119,21 +119,21 @@ nav a.active {
     color: #555;
     line-height: 1.6;
 }
-/* Menu Card */
-.card{
+/* Menu Cart */
+.cart{
     background: #fff;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
     box-shadow:0 4px 10px rgb(0,0,0,0.1);
 }
-.card img{
+.cart img{
     width: 100%;
     object-fit: cover;
     height: 250px;
     
 }
-.card button{
+.cart button{
     background: red;
     color: white;
     border: none;
@@ -142,7 +142,7 @@ nav a.active {
     margin-top: 5px;
     cursor: pointer;
 }
-.card button:hover{
+.cart button:hover{
     background-color: darkred;
 
 }
@@ -178,6 +178,7 @@ nav a.active {
 .icon-box p{
     margin-top: 8px;
     font-size: 14px;
+  
 }
 .icon-box img:hover{
     border-color: rgb(0,0,0);
@@ -190,6 +191,102 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+/*Cart Section*/
+table{
+    width:70%;
+    border-collapse: collapse;
+    background:#fff;
+    border-radius: 10px;
+    overflow:hidden;
+    margin:auto;
+
+}
+thead{
+    background: red;
+    color:white;
+}
+th,td{
+    padding: 15px;
+    text-align:center;
+}
+tbody tr{
+    border-bottom: 1px solid #ddd;
+}
+.item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.item img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.item p{
+     text-align: center;
+}
+.item h4{
+     text-align: center;
+}
+.remove{
+    background: red;
+    color: white;
+    border:none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.remove:hover{
+    background-color: darkred;
+}
+.grand-total td{
+   font-weight: bold;
+   font-size: 18px;
+}
+.grand-total button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.grand-total button:hover{
+    background-color: darkred;
+}
+.qty-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.qty-box button{
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius:4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.qty-box button:hover{
+    background-color: darkred;
+}
+.qty-box span{
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 16px;
+    text-align: center;
+}
+
+/* Start authentication*/
+.auth-container{
+
+
 }
 
 
