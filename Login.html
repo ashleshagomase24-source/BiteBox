@@ -29,7 +29,7 @@
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="bitedeal.html">Bite Deal</a></li>
                 <li><a href="cart.html">Card <i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="login.html">Login <i class="fa-regular fa-arrow-right-from-bracket"></i></a></li>
+                <li><a href="login.html">Login<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
                 <!-- <script src="https://kit.fontawesome.com/dc49d70e14.js" crossorigin="anonymous"></script>
                 -->
             </ul>
@@ -42,19 +42,28 @@
 
         <div class="auth-box">
             <h2>Login to Bite <span>Box</span></h2>
-           
+
             <form>
 
-                <input type="email" placeholder="enter email" required>
-                <input type="password" placeholder="Enter password" required>
-                <button type="submit">Login</button>
+                <input type="email" placeholder="enter email" id="email" required>
+                <div style="position: relative;">
+                    <input type="password" placeholder="Enter password" id="password" required>
+                    <span onclick="togglePassword()"
+                        style="position: absolute; right:10px; top: 50%; transform: translateY(-50%); cursor: pointer;">
+                        <i class="fa-solid fa-eye"></i>
+                   </span>
+                </div>
+                <button type="button" onclick="login()">Login</button>
             </form>
-                 <p><a href="signup.html">Forgot Password</a></p>
-                 <p>Don't have an account<a href="signup.html">Sign up</a></p>
+            <p id="error" style="color:red"></p>
+
+            <p><a href="signup.html">Forgot Password</a></p>
+            <p>Don't have an account<a href="signup.html">Sign up</a></p>
 
         </div>
 
     </section>
+    <script src="Loginscript.js"></script>
 
     <!--End Authentication section---->
 
